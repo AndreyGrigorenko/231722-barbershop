@@ -305,7 +305,10 @@ body {
   min-height: 330px;
 }
 
-.main-footer {
+.main-footer-1 {
+  height: 193px;
+  background-color: #000;
+  box-sizing: border-box;
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -334,166 +337,147 @@ body {
 
 /* Сетка товара барбершопа */
 
+/* Сетка хедера барбершопа */
+
+.main-header {
+	height: 72px;
+	background-color: #000;
+}
+
 .main-navigation li{
 	display: inline-block;
 }
 
+/* Сетка основного контента барбершопа */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*======================================
- Системное оформление - не изменять
-=======================================*/
-
-body {
-  padding: 3px;
+.main-container {
+	height: 900px;
 }
 
-body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
+.main-center-container {
+	height: 790px;	
+	width: 940px;
+	box-sizing: border-box;
+	margin-top: 55px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: red;
 }
 
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  display: none;
+.items {
+	height: 670px;
+	width: 460px;
+	float: left;
+	background-color: green;	
+	margin-top: 53px;	
 }
 
-body > *::before {
-  top: -3px;
-  left: -3px;
+.item-block-2 {
+	height: 140px;
+	padding-top: 16px;
+	box-sizing: border-box;
 }
 
-body > * > *::before {
-  top: -3px;
-  left: -3px;
+.item-block-2 img {
+	margin-right: 17px;
+	height: 149px;
 }
 
-body > * > * > *::before {
-  top: 0;
-  left: 0;
+.item-block-2 img:last-child {
+	margin-right: 0px;
 }
 
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+.text-content {
+	height: 510px;
+	width: 390px;
+	float: right;
+	background-color: green;
+	margin-top: 140px;
 }
 
-body > *::before {
-  color: white;
 
-  background: green;
+/* Cетка футера барбершопа */
+
+.main-footer-2 {
+	height: 189px;
+	background-color: #000;
+	box-sizing: border-box;
+	margin-top: 65px;
+  	padding-top: 60px;
+  	padding-bottom: 40px;
 }
 
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+.footer-contacts {
+	background-color: red;
 }
 
-body > * > *::before {
-  color: white;
-
-  background: rgb(255, 45, 82);
+.footer-social {
+	background-color: red;
 }
 
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
+.footer-copyright {
+	background-color: red;
 }
 
-body > * > * > *::before {
-  color: black;
 
-  background: rgb(234, 255, 45);
+
+
+
+/* Cетка каталога барбершопа */
+
+.main-content{
+	height: 915px;
 }
 
-.main-header::before {
-  content: ".main-header";
+.left-side-bar {
+	height: 575px;
+	width: 220px;
+	float: left;
+	margin-top: 60px;
+	background-color: red;
 }
 
-.container::before {
-  content: ".container";
+
+.manufacturers,
+.product-group {
+	height: 260px;
+	width: 174px;
+	background-color: green;
 }
 
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
+ 
+.products {
+	height: 600px;
+	width: 700px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 60px;
+	background-color: red;
+	box-sizing: border-box;
+	font-size: 0px;
+	
 }
 
-.main-navigation::before {
-  content: ".main-navigation";
+ .product {
+	height: 290px;
+	width: 220px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: green;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	font-size: 14px;
 }
 
-.user-block::before {
-  content: ".user-block";
+.out-margin {
+	margin-left: 0px;
 }
 
-.index-logo::before {
-  content: ".index-logo";
-}
 
-.features::before {
-  content: ".features";
-  top: -28px;
-}
-
-.features-item::before {
-  content: ".features-item";
-}
-
-.index-content::before {
-  content: ".index-content";
-}
-
-.index-content-left::before {
-  content: ".index-content-left";
-  left: auto;
-  right: 0;
-}
-
-.index-content-right::before {
-  content: ".index-content-right";
-  left: auto;
-  right: 0;
-}
-
-.main-footer::before {
-  content: ".main-footer";
-}
-
-.main-footer .container::before {
-  top: -28px;
-}
-
-.footer-contacts::before {
-  content: ".footer-contacts";
-}
-
-.footer-social::before {
-  content: ".footer-social";
-}
-
-.footer-copyright::before {
-  content: ".footer-copyright";
+.container-2-footer {
+	height: 45px;
+	width: 195px;
+	margin-left: 250px;	
+	clear: both;
+	background-color: blue;
 }
