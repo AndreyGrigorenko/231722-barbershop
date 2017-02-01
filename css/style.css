@@ -369,18 +369,22 @@ body {
 	width: 460px;
 	float: left;
 	background-color: green;	
-	margin-top: 53px;	
+	margin-top: 53px;
+	
 }
+
 
 .item-block-2 {
 	height: 140px;
 	padding-top: 16px;
 	box-sizing: border-box;
+	font-size: 0px;
 }
 
 .item-block-2 img {
 	margin-right: 17px;
 	height: 149px;
+	font-size: 0px;
 }
 
 .item-block-2 img:last-child {
