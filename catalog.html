@@ -22,11 +22,11 @@
             <li>
               <a href="#">Новости</a>
             </li>
-            <li class="active">
-              <span>Прайс-лист</span>
-            </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="price-list.html">Прайс-лист</a>
+            </li>
+            <li class="active">
+              <span>Магазин</span>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -43,99 +43,111 @@
     <div class="container">
     	<div class="container-2-header">
     		<h1>Средства для ухода</h1>        
-    		  <a href="#">Главная</a>
-    		  <a href="#">Магазин</a>
-    		  <span class="care">Средства для ухода</span>         
-    	</div>
+    		  <div class="breadcrumbs">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><span>Средства для ухода</span></li>            
+          </ul>
+        </div>
+      </div>
 
       <aside class="left-side-bar">
       <div class="manufacturers">
     		<h2>Производители:</h2>
-    		<form  class="form-1" action="#" method="post">
-    			<label><input type="checkbox" name="Baxter of California" checked>Baxter of California</label>
-    			<label><input type="checkbox" name="Mr natty">Mr natty</label>
-    			<label><input type="checkbox" name="Suavecito" checked>Suavecito</label>
-    			<label><input type="checkbox" name="Malin+goetz">Malin+goetz</label>
-    			<label><input type="checkbox" name="Murray's">Murray's</label>
-    			<label><input type="checkbox" name="American crew" checked>American crew</label>
+    		<form  class="form-1" action="#" method="post">    			
+          <input id="checkbox-1" type="checkbox" name="Baxter of California" checked>
+          <label for="checkbox-1">Baxter of California</label>
+    			<input id="checkbox-2" type="checkbox" name="Mr natty">
+          <label for="checkbox-2">Mr natty</label>
+    			<input id="checkbox-3" type="checkbox" name="Suavecito" checked>
+          <label for="checkbox-3">Suavecito</label>
+    			<input id="checkbox-4" type="checkbox" name="Malin+goetz">
+          <label for="checkbox-4">Malin+goetz</label>
+    			<input id="checkbox-5" type="checkbox" name="Murray's">
+          <label for="checkbox-5">Murray's</label>
+    			<input id="checkbox-6" type="checkbox" name="American crew" checked>
+          <label for="checkbox-6">American crew</label>
     		</form>
     	</div>
 
-    	<div class="product-group">
+    	<div class="product-group clearfix">
     		<h2>Группы товаров:</h2>
     		<form  class="form-2" action="" method="post">
-    			<label><input type="radio" name="Бритвенные принадлежности">Бритвенные принадлежности</label>
-    			<label><input type="radio" name="Средства для ухода" checked>Средства для ухода</label>
-    			<label><input type="radio" name="Аксессуары">Аксессуары</label>
+    			<input id="radio-1" type="radio" name="Бритвенные принадлежности">
+          <label for="radio-1">Бритвенные принадлежности</label>
+    			<input id="radio-2" type="radio" name="Средства для ухода" checked>
+          <label for="radio-2">Средства для ухода</label>
+    			<input id="radio-3" type="radio" name="Аксессуары">
+          <label for="radio-3">Аксессуары</label>
        		</form>
        		<button class="product-group-button">Показать</button>
     	</div>
       </aside>
 
     	<div class="products">
-    		<article class="product out-margin">
-    			<a href="catalog-item.html"><img src="img/photo2.jpg" alt="img-1" width="220" height="165"></a>
-    			<a href="catalog-item.html">
-            <span class="caption">Набор для путешествий</span>
+    		<article class="product out-margin clearfix">
+    			<a href="catalog-item.html"><img src="img/photo2.jpg" alt="img-1" width="220" height="165">    			
+            <span class="caption">Набор для путешествий</span><br>
             <span class="caption-2">"Baxter of California"</span>
           </a>
-    		    <div class="price">2900 руб.</div>
-    		    <a class="buy" href="#">Купить</a>
+    		    <div class="price price-1">2900 руб.</div>
+    		    <a class="buy buy-1" href="#">Купить</a>
     		</article>
 
-    		<article class="product">
-    			<a href="#"><img src="img/photo3.jpg" alt="img-2" width="220" height="165"></a>
-    			<span class="caption">Увлажняющий кондиционер
+    		<article class="product clearfix">
+    			<a href="#"><img src="img/photo3.jpg" alt="img-2" width="220" height="165">    			
+            <span class="caption">Увлажняющий кондиционер</span><br>
             <span class="caption-2">"Baxter of California"</span>
-          </span>
-    		    <div class="price">
+          </a>
+    		    <div class="price price-1">
     				750 руб.
     		    </div>
-    		    <a class="buy" href="#">Купить</a>
+    		    <a class="buy buy-1" href="#">Купить</a>
     		</article>
 
-    		<article class="product ">
-    			<a href="#"><img src="img/photo4.jpg" alt="img-3" width="220" height="165"></a>
-    			<span class="caption">Гель для волос
+    		<article class="product clearfix">
+    			<a href="#"><img src="img/photo4.jpg" alt="img-3" width="220" height="165">    			
+            <span class="caption">Гель для волос</span><br>
             <span class="caption-2">"Suavecito"</span>
-          </span>
-    		    <div class="price">
+          </a>
+    		    <div class="price price-1">
     				290 руб.
     		    </div>
-    		    <a class="buy" href="#">Купить</a>
+    		    <a class="buy buy-1" href="#">Купить</a>
     		</article>
 
-    		<article class="product out-margin">
-    			<a href="#"><img src="img/photo5.jpg" alt="img-4" width="220" height="165"></a>
-    			 <span class="caption">Глина для укладки волос
-          <span class="caption-2">"American crew"</span>
-          </span>
-    		    <div class="price">
+    		<article class="product out-margin clearfix">
+    			<a href="#"><img src="img/photo5.jpg" alt="img-4" width="220" height="165">    			 
+            <span class="caption">Глина для укладки волос</span><br>
+            <span class="caption-2">"American crew"</span>
+          </a>
+    		    <div class="price price-1">
     				500 руб.
     		    </div>
-    		     <a class="buy" href="#">Купить</a>
+    		     <a class="buy buy-1" href="#">Купить</a>
     		</article>
 
-    		<article class="product">
-    			<a href="#"><img src="img/photo6.jpg" alt="img-5" width="220" height="165"></a>
-    			<span class="caption">Гель для волос
+    		<article class="product clearfix">
+    			<a href="#"><img src="img/photo6.jpg" alt="img-5" width="220" height="165">
+    			  <span class="caption">Гель для волос</span><br>
             <span class="caption-2">"American crew"</span>
-          </span>
-    		    <div class="price">
+          </a>
+    		    <div class="price price-1">
     				300 руб.
     		    </div>
-    		   <a class="buy" href="#">Купить</a>
+    		   <a class="buy buy-1" href="#">Купить</a>
     		</article>
 
-    		<article class="product">
-    			<a href="#"><img src="img/photo7.jpg" alt="img-6" width="220" height="165"></a>
-    			<span class="caption">Набор для бритья
+    		<article class="product clearfix">
+    			<a href="#"><img src="img/photo7.jpg" alt="img-6" width="220" height="165">
+    			  <span class="caption">Набор для бритья</span><br>
             <span class="caption-2">"Baxter of California"</span>
-          </span>
-    		    <div class="price">
+          </a>
+    		    <div class="price price-1">
     				3900 руб.
     		    </div>
-    		    <a class="buy" href="#">Купить</a>
+    		    <a class="buy buy-1" href="#">Купить</a>
     		</article>
     	</div> 
 
