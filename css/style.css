@@ -235,6 +235,15 @@ body {
   padding: 0;
 }
 
+body {
+  min-width: 960px;  
+}
+
+.central-container {
+  width: 940px;
+  margin: 0 auto; 
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -256,15 +265,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  min-width: 960px; 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  color: #ffffff;
-  text-transform: uppercase; 
-}
 
 .body-container {
   min-width: 960px;
@@ -272,18 +272,8 @@ body {
   color: #fff;
 }
 
-
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-
 .main-content-1 {
-	height: 1460px;
-	
+	height: 1460px;	
 }
 
 .main-header {
@@ -601,6 +591,7 @@ body {
 }
 
 .footer-contacts a {
+  text-decoration: underline;
   color: #ffffff;
 }
 
@@ -856,15 +847,14 @@ box-sizing: border-box;
 	width: 460px;
 	float: left;	
 	margin-top: 38px;	
-  
+    
 }
 
 .item-block-2 {
 	min-height: 140px;
 	margin-top: 16px;
 	box-sizing: border-box;
-	font-size: 0px;
-   
+	font-size: 0px;   
 }
 
 .item-block-1 img {
@@ -875,12 +865,13 @@ box-sizing: border-box;
  display: inline-block;
   vertical-align: top;
 	margin-right: 20px;
+  margin-bottom: 20px;
 	height: 149px;
 	font-size: 0px;
   box-shadow: 0 0 15px 3px #CACACA;
 }
 
-.item-block-2 img:last-child {
+.item-block-2 img:nth-child(3n) {
 	margin-right: 0px;
 }
 
@@ -894,13 +885,18 @@ box-sizing: border-box;
 .text-content-2 {
   margin-top: 60px;  
 }
+
+.text-content-2>h2{
+  margin-bottom: 30px;
+}
 /* Cетка футера барбершопа */
 
 .main-footer-2 {
 	height: 189px;
 	background: #000 url("../img/footer-img2.png");
+  color: #fff;
 	box-sizing: border-box;
-	margin-top: -45px;
+	margin-top: -15px;
   	padding-top: 60px;
   	padding-bottom: 40px;
 }
@@ -961,6 +957,11 @@ input[type="checkbox"] + label {
   margin-bottom: 20px;
 }
 
+input[type="checkbox"]:disabled + label {
+  color: #B1AFAC;
+  cursor: default;
+}
+
 input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
@@ -981,7 +982,7 @@ input[type="checkbox"]:hover + label::before {
 input[type="checkbox"]:disabled + label::before {
   background: url(../img/sprite-4.png);
   background-position: 20px;
-  opacity: 0.5;  
+  opacity: 0.3;  
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -1003,7 +1004,7 @@ input[type="checkbox"]:checked:hover + label::after {
 input[type="checkbox"]:checked:disabled + label::after {
   background: url(../img/sprite-4.png);
   background-position: 40px;
-  opacity: 0.5;
+  opacity: 0.3;
 
 }
 
@@ -1017,6 +1018,11 @@ input[type="radio"] + label {
   position: relative;
   cursor: pointer;
   margin-bottom: 20px;
+}
+
+input[type="radio"]:disabled + label {
+  color: #B1AFAC;
+  cursor: default;
 }
 
 input[type="radio"] + label::before {
@@ -1039,7 +1045,7 @@ input[type="radio"]:hover + label::before {
 input[type="radio"]:disabled + label::before {
   background: url(../img/sprite-4.png); 
   background-position: 0px;
-  opacity: 0.5;  
+  opacity: 0.3;  
 }
 
 input[type="radio"]:checked + label::after {
@@ -1061,7 +1067,7 @@ input[type="radio"]:checked:hover + label::after {
 input[type="radio"]:checked:disabled + label::after {
   background: url(../img/sprite-4.png);
   background-position: 60px;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .product-group-button {
@@ -1090,8 +1096,7 @@ input[type="radio"]:checked:disabled + label::after {
 	margin-top: 60px;
 	margin-bottom: 40px;	
 	box-sizing: border-box;
-	font-size: 0px;
-	
+	font-size: 0px;	
 }
 
  .product {
@@ -1100,7 +1105,7 @@ input[type="radio"]:checked:disabled + label::after {
 	display: inline-block;
 	vertical-align: top;	
 	margin-bottom: 20px;
-	margin-left: 20px;
+	margin-right: 20px;
 	font-size: 14px;
   background-color: #fff;
   box-shadow: 0 0 15px 3px #CACACA;  
@@ -1109,8 +1114,9 @@ input[type="radio"]:checked:disabled + label::after {
 .product:hover {
   box-shadow: 0 0 30px 5px #CACACA;
 }
-.out-margin {
-	margin-left: 0px;
+
+.product:nth-child(3n) {
+	margin-right: 0px;
 }
 
 .caption,
@@ -1917,8 +1923,13 @@ background: #000 url("../img/price-list-bg.png") center top;
 
 .login-form .restore {
   float: right;
-
   color: #000000;
+  text-decoration: underline;
+}
+
+.login-form .restore:hover {
+  text-decoration: none;
+  color: #804D1B;
 }
 
 .login-form .btn {
