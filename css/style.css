@@ -424,8 +424,16 @@ a {
 .index-content {
   margin-bottom: 35px;
   padding: 50px 80px;
-  color: #000000;
- background: url("../img/index-content-shadow.png") no-repeat center, #f8f5f2 url("../img/bg1.png") repeat;  
+  color: #000; 
+  background-color: #f8f5f2; 
+}
+
+.index-content-1 {
+  background: url("../img/index-content-shadow.png") no-repeat center, #f8f5f2 url("../img/index-content-1-bg.png") repeat;
+}
+
+.index-content-2 {
+  background: url("../img/index-content-shadow.png") no-repeat center, #f8f5f2 url("../img/index-content-2-bg.png") repeat;
 }
 
 .index-content-left {
@@ -766,7 +774,11 @@ a {
 	width: 940px;
 	box-sizing: border-box;	
 	margin-right: auto;
-	margin-left: auto;	
+	margin-left: auto;  	
+}
+
+.central-container>h1 {
+  margin-bottom: 20px;
 }
 
 .breadcrumbs li:last-child::after {
@@ -846,7 +858,7 @@ box-sizing: border-box;
 	height: 670px;
 	width: 460px;
 	float: left;	
-	margin-top: 38px;	
+	margin-top: 48px;	
     
 }
 
@@ -900,13 +912,6 @@ box-sizing: border-box;
   	padding-top: 60px;
   	padding-bottom: 40px;
 }
-
-
-
-
-
-
-
 
 /* Cетка каталога барбершопа */
 
@@ -1130,7 +1135,7 @@ input[type="radio"]:checked:disabled + label::after {
   background-color: #E5E5E5;  
   color: #000;
   text-align: center;
- float: left;
+ float left;
  box-sizing: border-box;
  padding-top: 13px;
  margin-left: 15px;
@@ -1139,7 +1144,8 @@ input[type="radio"]:checked:disabled + label::after {
 
 
 .buy-1 {
-  margin-top: 10px;
+  margin-left: 125px;
+  margin-top: -45px;
 }
 
 .container-2-footer {
@@ -1178,41 +1184,20 @@ input[type="radio"]:checked:disabled + label::after {
 
 /* Cетка прайс листа барбершопа */
 
-body {
-  min-width: 960px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  color: #ffffff;
-  text-transform: uppercase;
-
- 
-}
-
 .main-container-2 {
   width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
+  height: 863px;
+  margin: 0 auto;  
 }
 
 .inner-page {
   color: #000000;
-background: #000 url("../img/price-list-bg.png") center top;
+background: #fff url("../img/price-list-bg.png") center top;
   
-}
-
-.main-container-2 {
-	height: 863px;
-	
 }
 
 .main-header {
-  margin-bottom: 60px;
-  
-  color: #ffffff;
-  
+  color: #ffffff;  
   background-color: #000000;
 }
 
@@ -1228,14 +1213,12 @@ background: #000 url("../img/price-list-bg.png") center top;
 .main-navigation ul {
   margin: 0;
   padding: 0;
-
   list-style: none;
   font-size: 0;
 }
 
 .main-navigation li {
   display: inline-block;
-
   font-size: 16px;
   line-height: 20px;
   vertical-align: top;
@@ -1243,9 +1226,8 @@ background: #000 url("../img/price-list-bg.png") center top;
 
 .main-navigation a {
   display: block;
-  padding: 25px 20px;
-  
-  color: #ffffff;
+  padding: 25px 20px;  
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1255,7 +1237,6 @@ background: #000 url("../img/price-list-bg.png") center top;
 
 .main-navigation .active {
   position: relative;
-
   background-color: none;
 }
 
@@ -1269,13 +1250,10 @@ background: #000 url("../img/price-list-bg.png") center top;
   right: 20px;
   bottom: 0;
   left: 20px;
-
   height: 5px;
-
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-/* Вложенность 3, но при желании можно уменьшить */
 
 .main-navigation .active span {
   display: block;
@@ -1296,221 +1274,6 @@ background: #000 url("../img/price-list-bg.png") center top;
 
 .main-navigation .logo-inner:hover {
   background: none;
-}
-
-
-
-.index-logo {
-  width: 368px;
-  height: 204px;
-  margin: 0 auto;
-  margin-bottom: 25px;
-}
-
-.index-logo img {
-  width: 368px;
-  height: 204px;
-}
-
-.features {
-  margin-bottom: 80px;
-}
-
-.features-item {
-  float: left;
-  width: 300px;
-  margin-right: 20px;
-
-  text-align: center;
-}
-
-.features-item:last-child {
-  margin-right: 0;
-}
-
-.features-name {
-  position: relative;
-
-  display: block;
-  margin-bottom: 30px;
-  padding-bottom: 35px;
-
-  font-size: 30px;
-  line-height: 42px;
-}
-
-.features-item p {
-  margin: 10px;
-  margin-bottom: 0;
-}
-
-.features-name::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-
-  background-color: #ffffff;
-  transform: rotate(45deg);
-}
-
-.index-content {
-  margin-bottom: 35px;
-  padding: 50px 80px;
-
-  color: #000000;
-
-  background: url("../img/index-content-shadow.png") no-repeat center,
-  #f8f5f2 url("../img/pattern-white.jpg");
-}
-
-.index-content-left {
-  float: left;
-  width: 380px;
-}
-
-.index-content-right {
-  float: right;
-  width: 300px;
-}
-
-.index-content-title {
-  margin: 0;
-  margin-bottom: 25px;
-  
-  font-size: 30px;
-  line-height: 42px;
-}
-
-.index-content p {
-  margin: 0;
-  margin-bottom: 25px;
-}
-
-.news-preview {
-  margin: 0;
-  padding: 0;
-  padding-right: 35px;
-
-  list-style: none;
-}
-
-.news-preview li {
-  margin-bottom: 25px;
-}
-
-.news-preview p {
-  margin-bottom: 0;
-}
-
-.news-preview time {
-  text-transform: none;
-}
-
-.btn {
-  display: inline-block;
-  margin-right: 16px;
-  padding: 10px 33px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  vertical-align: top;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  
-  background-color: #000000;
-  border: none;
-  cursor: pointer;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: #663d15;
-}
-
-.btn.disabled,
-.btn:disabled {
-  cursor: default;
-  opacity: 0.5;
-}
-
-.btn.disabled:hover,
-.btn:disabled:hover {
-  background-color: #000000;
-}
-
-.gallery {
-  position: relative;
-
-  height: 260px;
-}
-
-.gallery-content {
-  height: 164px;
-  margin: 0;
-
-  background-color: #cccccc;
-  border: 7px solid #ffffff;
-}
-
-.gallery-content img {
-  width: 286px;
-  height: 164px;
-}
-
-.gallery .btn {
-  position: absolute;
-  bottom: 0;
-
-  width: 140px;
-  margin: 0;
-}
-
-.gallery-prev {
-  left: 0;
-}
-
-.gallery-next {
-  right: 0;
-}
-
-.appointment-form input {
-  float: left;
-  width: 106px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 7px 15px;
-
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  color: #000000;
-  text-transform: uppercase;
-  
-  background-color: #f9f6f3;
-  border: 2px solid #000000;
-}
-
-.appointment-form input:focus {
-  border: 2px solid #663d15;
-}
-
-.appointment-form input:nth-child(2n) {
-  margin-right: 0;
-}
-
-.appointment-form .btn {
-  clear: both;
-  width: 100%;
 }
 
 /* Стили внутренних страниц */
@@ -1707,16 +1470,6 @@ background: #000 url("../img/price-list-bg.png") center top;
   margin-bottom: 0;
 }
 
-.main-footer {
-  margin-top: 65px;
-  padding-top: 60px;
-  padding-bottom: 40px;
-
-  color: #ffffff; /* лучше явно прописать везде для футера */
-
-  background: #252525 url("../img/pattern-black.jpg");
-  box-shadow: inset 0px 30px 40px -15px #000;
-}
 
 .footer-contacts {
   float: left;
@@ -1731,13 +1484,6 @@ background: #000 url("../img/price-list-bg.png") center top;
 .footer-contacts a:hover {
   text-decoration: none;
 }
-
-
-
-.main-footer-2 {
-  color: #fff;
-}
-
 
 
 
