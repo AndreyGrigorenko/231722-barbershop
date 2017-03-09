@@ -58,8 +58,7 @@ body {
 
 /* Товар барбершопа */
 
-.main-header>h1,
- {
+.main-header>h1 {
  	font-family: "PT Sans Narrow", "Arial", sans-serif;	 
 	font-weight: bold;
 	font-size: 30px;
@@ -734,7 +733,7 @@ a {
 	height: 952px;
 	background: url("../img/catalog-catalog-item-bg.png") center top;
 	box-sizing: border-box;
-	padding-top: 40px;
+	padding-top: 40px;  
   color: #000;
 }
 
@@ -743,11 +742,12 @@ a {
 	width: 940px;
 	box-sizing: border-box;	
 	margin-right: auto;
-	margin-left: auto;  	
+	margin-left: auto;   	
 }
 
 .central-container>h1 {
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .breadcrumbs li:last-child::after {
@@ -831,7 +831,7 @@ a {
 
 .item-block-2 {
 	min-height: 140px;
-	margin-top: 16px;
+	margin-top: 16px;  
 	box-sizing: border-box;
 	font-size: 0px;   
 }
@@ -1241,7 +1241,7 @@ background: #fff url("../img/price-list-bg.png") center top;
 
 .inner-page-title h1 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
   padding: 0;
   font-size: 30px;
   line-height: 42px;
